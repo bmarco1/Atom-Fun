@@ -1,0 +1,64 @@
+CREATE TABLE League_of_Legends ( id INTEGER PRIMARY KEY AUTOINCREMENT
+,
+champion TEXT,
+minutes_played INTEGER,
+win1_loss2 INTEGER,
+role TEXT);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(ekko, 54, 1, mid);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(ekko, 41, 1, mid);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(galio, 45, 2, mid);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(boriana, 50, 1, mid);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(ekko, 47, 1, mid);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(zed, 42, 1, mid);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(galio, 55, 2, mid);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(zed, 51, 2, mid);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(alistar, 46, 1, support);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(ekko, 36, 1, mid);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(alistar, 48, 2, support);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(zed, 53, 2, mid);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(kassadin, 56, 1, mid);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(ekko, 48, 2, mid);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(brand. 49, 1, support);
+
+INSERT INTO League_of_Legends(type, champion, minutes_played, win1_loss2, role)
+VALUES(varus, 44, 2, ad);
+
+
+
+SELECT type, SUM(win1_loss2) FROM League_of_Legends GROUP BY type;
+
+SELECT type, SUM(minutes_played) FROM League_of_Legends WHERE minutes > 50
+GROUP BY type;
+
+
+SELECT type, SUM(role) FROM League_of_Legends GROUP BY type;
