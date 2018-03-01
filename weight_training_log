@@ -1,0 +1,77 @@
+CREATE TABLE Weight_Training ( id INTEGER PRIMARY KEY AUTOINCREMENT
+,
+type TEXT,
+minutes INTEGER,
+number_of_meals INTEGER,
+ounces_of_water INTEGER);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (chest_and_shoulders, 78, 4, 107);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (back_and_hamstrings, 80, 4, 100);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (biceps_triceps_forearms, 82, 5, 99);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (legs_all, 97, 4, 120);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (chest_and_shoulders, 75, 4, 107);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (back_and_hamstrings, 80, 4, 100);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (biceps_triceps_forearms, 82, 5, 99);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (legs_all, 97, 4, 120);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (chest_and_shoulders, 75, 4, 107);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (back_and_hamstrings, 80, 4, 100);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (biceps_triceps_forearms, 82, 5, 99);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (legs_all, 97, 4, 120);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (chest_and_shoulders, 75, 4, 107);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (back_and_hamstrings, 80, 4, 100);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (biceps_triceps_forearms, 82, 5, 99);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (legs_all, 97, 4, 120);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (chest_and_shoulders, 75, 4, 107);
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (back_and_shoulders, 80, 4, 102)
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals ounces_of_water)
+VALUES (legs_all, 83, 4, 105)
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (chest_and_triceps, 87, 5, 104)
+
+INSERT INTO Weight_Training(type, minutes, number_of_meals, ounces_of_water)
+VALUES (biceps_and_forearms, 77, 4, 97)
+
+SELECT type, SUM(minutes) FROM Weight_Training GROUP BY type;
+
+SELECT type, SUM(minutes) FROM Weight_Training WHERE minutes > 80
+GROUP BY type;
+
+
+SELECT type, SUM(ounces_of_water) FROM Weight_Training GROUP BY type;
